@@ -17,7 +17,7 @@ echo "Directorio destino de copia: $destino"
 contador=0
 for fich in ./*
 do
-    if [ -x "$fich" ] && [ -f "$fich" ]
+    if [ -x "$fich" ]
     then
         cp "$fich" "$destino"
         echo "$fich ha sido copiado a $destino"
